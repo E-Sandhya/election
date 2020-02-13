@@ -1,0 +1,293 @@
+@media only screen and (min-width : 1824px) {
+	#AP_Constituency {
+    font-size: inherit;
+}
+#TG_Constituency {
+	font-size: inherit;
+}	
+.col-blg {
+	min-height: 402px;
+}	
+.tally-scroll {
+	height: 330px;
+}	
+/*
+.tally-scroll table {
+    min-width: 591px;
+}	
+*/
+	
+}
+
+@media only screen and (max-width: 1199px){
+	.scroll-blog {
+	overflow-x: auto;
+	}
+}
+@media only screen and (max-width: 1024px){
+	#tally_lok_sabha {
+		top: 0%!important;
+	}
+	#tally_lok_sabha::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 137px;
+    background-color: #B40003;
+    top: 18%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 9999;
+}
+	
+	/*nav-bar*/
+/*
+.navbar-header {
+      float: none;
+  }
+  .navbar-left,.navbar-right {
+      float: none !important;
+  }
+  .navbar-toggle {
+      display: block;
+  }
+  .navbar-collapse {
+      border-top: 1px solid transparent;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-fixed-top {
+      top: 0;
+      border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+      display: none!important;
+  }
+  .navbar-nav {
+      float: none!important;
+      margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+      float: none;
+  }
+  .navbar-nav>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+  .collapse.in{
+      display:block !important;
+  }
+	
+.navbar-toggle {
+    margin-top: 26px;
+}	
+
+.navbar-brand::before {
+	position: absolute;
+	content: "";
+	width: 100%;
+	left: 0;
+	height: 4px;
+	background-color: #cc0001;
+	bottom: 19%;
+	z-index: -1;
+	display: none;
+}	
+	
+.navbar-nav li a div img {
+    margin-right: 10px;
+    float: left;
+}	
+*/
+	
+/*--------*/
+	
+.col-blg {
+    min-height: 240px;
+}
+.tally-scroll {
+    height: 150px;
+}
+.totel-target-info {
+	top: 20%;
+	font-size: 12px;	
+}	
+.totel-target-info h4 {
+	font-size: 11px
+}	
+
+.info-graph-bot {
+    min-height: 235px!important;
+}	
+.col-footer {
+    min-height: 650px;
+}	
+	
+}
+@media only screen and (max-width : 1023px) {
+	.side-quik-links {
+		display: none;
+	}
+
+}
+
+@media only screen and (max-width : 991px) {
+	.news-section {
+    background-color: transparent;
+	}
+	#tally_lok_sabha {
+		top: 27% !important;
+	}
+	.totel-target-info {
+    top: 13%;
+	}
+	.col-blg {
+    min-height: 350px;
+}
+	.col-last-child-resp {
+		margin-right: 0px;
+	}
+.totel-target-info {
+	width: 50%;
+	}
+	.center-line-1 {
+	height: 201px;
+	top: 34%;
+}
+.constituency-scroll {
+	height: 300px;
+}
+.state-blg {
+	min-height: auto !important;
+}
+.tally-scroll {
+    height: 283px;
+}
+}
+@media only screen and (max-width: 768px){
+	.live-news-add img {
+     margin-top: 0;
+	}
+
+.center-line-1 {
+    height: 90px;
+    top: 44%;
+}	
+/*
+	.table-scrollable table{
+	min-width: 450px;
+}	
+*/
+}
+@media only screen and (max-width: 767px){
+	.col-blg {
+    min-height: 355px;
+	}
+		
+	.totel-target-info {
+	width: 50%;
+	top: 13%;	
+	}
+	#tally_lok_sabha {
+		top: 27%!important;
+	}
+	.center-line-1 {
+	height: 200px;
+	top: 36%;
+}
+	
+.footer-row > .col-xs-4{
+		width: 100%;
+	}
+	.footer-logo {
+	display: flex;
+	margin-bottom: 10px;
+	}
+	.footer-logo img {
+		margin-right: 10px;
+	}
+	.ad-responsive img {
+		float: none;
+	    margin: auto;
+	}
+	.col-footer {
+	min-height: auto;
+	}	
+	
+}
+
+@media only screen and (max-width : 660px) {
+	.select-btn {
+	width: 60%;
+}
+
+.info-graph-bot {
+    min-height: 351px;
+}	
+	
+}
+@media only screen and (max-width: 539px){
+	.resp-th-width tr td:first-child {
+		max-width: 80px;
+		
+	}
+	.state-dropdown-list {
+	position: relative;
+	}
+}
+@media only screen and (max-width: 595px){
+	.state-wise-map-blg {
+	max-width: 100%;
+	width: 100%;
+	margin-right: 0px;
+	margin-bottom: 10px;
+}
+	.state-wise-vip-blg {
+	max-width: 100%;
+	width: 100%;
+}
+		
+}
+@media only screen and (max-width: 460px){
+		#tally_lok_sabha::after {
+	content: "";
+	position: absolute;
+	width: 2px;
+	height: 185px;
+	background-color: #B40003;
+	top: 8%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	z-index: 9999;
+	
+}
+	}
+@media only screen and (max-width: 360px){
+	#tally_lok_sabha::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 141px;
+    background-color: #B40003;
+    top: 18%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 9999;
+}
+	.col-blg {
+    min-height: 265px;
+}
+	.totel-target-info {
+    width: 50%;
+    top: 20%;
+}
+	#tally_lok_sabha {
+    top: 10% !important;
+}
+.center-line-1 {
+	height: 140px;
+	top: 33%;
+}	
+}

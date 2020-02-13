@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+      <title>ETV Bharat Election</title>
+      <!-- Bootstrap -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/font-awesome.min.css" rel="stylesheet">
+      <link href="css/style-new.css" rel="stylesheet">
+      <link href="css/responsive.css" rel="stylesheet">
+      <link href="css/flowplayer.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/data-tables.css">
+      <!--Google Fonts-->
+      <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet" type="text/css"/>
+      <!--font-family: 'Roboto', sans-serif;-->
+      <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i" rel="stylesheet" type="text/css" />
+      <!--font-family: 'Merriweather', serif;-->
+      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+      <style>
+         .highcharts-yaxis-labels {
+         display: none;
+         }
+      </style>
+   </head>
+   <body>
+      <header class="header-sec">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-md-3">
+                  <div class="logo-div"> <img src="images/logo.png" alt=""> </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <div class="add-section">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12 col-sm-12 col-xs-12">
+                  <div class="add-blog"> <img src="images/ads/top-add.jpg" alt="" class="img-responsive"> </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <section class="content-sec section-pan news-section">
+         <div class="container-fluid">
+            <div class="row" id="election">
+               <div class="heading">
+                  <div class="col-md-12 col-sm-12 col-xs-12">
+                     <!--          <h3>Tally</h3>-->
+                  </div>
+               </div>
+            </div>
+            <div class="row headingh5">
+               <div class="col-md-12">
+                  <div class="col-md-4 col-sm-4 no-pad">
+                     <div class="col-blg col-bg">
+                        <div class="main-heading">
+                           <h5>Live News <i class="fa fa-circle blink_text"></i></h5>
+                        </div>
+                        <div class="live-news">
+                           <div class="flowplayer fixed-controls no-toggle no-time play-button obj" data-live="true" data-share="false" data-ratio="0.5625"  data-logo="">
+                              <video stretch="true" controls>
+                                 <source type="application/x-mpegurl" src="http://etvbharatlive2.akamaized.net/hls/live/710296/rajasthan/index.m3u8">
+                              </video>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!--Col-->
+                  <div class="col-md-4 col-sm-4 no-pad">
+                     <div class="col-blg col-bg">
+                        <div class="main-heading">
+                           <h5>Lok Sabha Elections Results (<span id="sumAllPartyValue"></span> / 545 )</h5>
+                        </div>
+                        <div class="scroll-blog tally-scroll">
+                           <table class="table table-bordered table-hover" id="lokSabhaEresult">
+                              <thead>
+                                 <tr>
+                                    <th>Party</th>
+                                    <th>Lead</th>
+                                    <th>Won</th>
+                                    <th>Total</th>
+                                 </tr>
+                              </thead>
+                              <tbody>
+                                <!--  <tr>
+                                    <td>BJP +</td>
+                                    <td>20</td>
+                                    <td>15</td>
+                                    <td>35</td>
+                                 </tr>
+                                 <tr>
+                                    <td>Cong +</td>
+                                    <td>15</td>
+                                    <td>10</td>
+                                    <td>25</td>
+                                 </tr>
+                                 <tr>
+                                    <td>SP + BSP</td>
+                                    <td>13</td>
+                                    <td>7</td>
+                                    <td>20</td>
+                                 </tr>
+                                 <tr>
+                                    <td>TDP</td>
+                                    <td>12</td>
+                                    <td>6</td>
+                                    <td>18</td>
+                                 </tr>
+                                 <tr>
+                                    <td>TMC</td>
+                                    <td>11</td>
+                                    <td>6</td>
+                                    <td>17</td>
+                                 </tr>
+                                 <tr>
+                                    <td>TRS</td>
+                                    <td>10</td>
+                                    <td>5</td>
+                                    <td>15</td>
+                                 </tr>
+                                 <tr>
+                                    <td>BJD</td>
+                                    <td>11</td>
+                                    <td>4</td>
+                                    <td>14</td>
+                                 </tr>
+                                 <tr>
+                                    <td>Others</td>
+                                    <td>8</td>
+                                    <td>2</td>
+                                    <td>10</td>
+                                 </tr>
+                                 <tr class="total-tr">
+                                    <td>Total</td>
+                                    <td>119</td>
+                                    <td>63</td>
+                                    <td>175 / 545</td>
+                                 </tr> -->
+                              </tbody>
+                           </table>
+                        </div>
+                     </div>
+                  </div>
+                  <!--Col-->
+                  <div class="col-md-4 col-sm-4 no-pad">
+                     <div class="col-blg col-bg col-last-child">
+                        <div class="side-ad l-side-ad ad-responsive clearfix">
+                           <img src="images/ads/standard-side-ad-2.jpg" alt="" class="img-responsive">
+                        </div>
+                     </div>
+                  </div>
+                  <!--Col-->
+               </div>
+               <!--colblog-->
+            </div>
+         </div>
+      </section>
+      <section class="content-sec section-pan">
+         <div class="container">
+            <div class="row headingh5">
+               <div class="col-md-12">
+                  <div class="col-md-7 no-pad">
+                     <div class="state-blg col-blg col-bg col-last-child-resp clearfix">
+                        <div class="main-heading">
+                           <h5>Select State Wise Election Results</h5>
+                        </div>
+                        <select class="div-toggle constit-drop" id="stateWiseOption" onchange="onChangeStates(this.value)">
+                           <option data-show=".state-ap">Andhra Pradesh</option>
+                           <option data-show=".state-tg">Telangana</option>
+                           <option data-show=".state-be">Bengal</option>
+                        </select>
+                        <div class="state-wise-result">
+                           <div class="state-ap">
+                              <div class="state-wise-map-blg no-pad">
+                                 <div class="target-ap">
+                                    <h4>Andhra Pradesh (<span id="stateWiseTotal"></span>/ 25 )</h4>
+                                 </div>
+                                 <div class="scroll-blog state-scroll">
+                                    <table class="table table-striped table-bordered table-hover table-responsive" id="state-ap">
+                                       <thead>
+                                          <tr>
+                                             <th>Party</th>
+                                             <th>Lead</th>
+                                             <th>Won</th>
+                                             <th>Total</th>
+                                             <th>Gain +</th>
+                                             <th>Loss -</th>
+                                          </tr>
+                                       </thead>
+                                       <tbody id="StateWiseData">
+                                       </tbody>
+                                    </table>
+                                 </div>
+                                 <div class="state-maps">
+                                    <img src="images/ap-map.jpg" alt="">
+                                 </div>
+                              </div>
+                              <div class="state-wise-vip-blg no-pad">
+                                 <div class="state-vips">
+                                    <h4>VIP Candidates</h4>
+                                    <div class="scroll-blog vip-scroll" id="vipCandidates">
+                                       <!-- <a href="#" class="states-vip-blog clearfix">
+                                          <div class="vip-img">
+                                             <img src="images/ashok.png" alt="">
+                                          </div>
+                                          <div class="state-vip-cont clearfix">
+                                             <p><strong>Ashok Bendalam</strong> | TDP</p>
+                                             <div class="vip-leading">
+                                                <p>Leading <i class="fa fa-thumbs-up"></i></p>
+                                                <span>Ichchapuram</span>
+                                             </div>
+                                          </div>
+                                       </a>
+                                       <a href="#" class="states-vip-blog clearfix">
+                                          <div class="vip-img">
+                                             <img src="images/venkataramana.png" alt="">
+                                          </div>
+                                          <div class="state-vip-cont clearfix">
+                                             <p><strong>K.Venkata Ramana</strong> | YSRCP</p>
+                                             <div class="vip-leading vip-trailing">
+                                                <p>Leading <i class="fa fa-thumbs-down"></i></p>
+                                                <span>Pathapatnam</span>
+                                             </div>
+                                          </div>
+                                       </a>
+                                       <a href="#" class="states-vip-blog clearfix">
+                                          <div class="vip-img">
+                                             <img src="images/lakshmi-devi.png" alt="">
+                                          </div>
+                                          <div class="state-vip-cont clearfix">
+                                             <p><strong>Gunda Lakshmi Devi</strong> | TDP</p>
+                                             <div class="vip-leading">
+                                                <p>Leading <i class="fa fa-thumbs-up"></i></p>
+                                                <span>Srikakulam</span>
+                                             </div>
+                                          </div>
+                                       </a>
+                                       <a href="#" class="states-vip-blog clearfix">
+                                          <div class="vip-img">
+                                             <img src="images/akula-satyanarayana.png" alt="">
+                                          </div>
+                                          <div class="state-vip-cont clearfix">
+                                             <p><strong>Akula Satyanarayana</strong> | BJP</p>
+                                             <div class="vip-leading vip-trailing">
+                                                <p>Leading <i class="fa fa-thumbs-down"></i></p>
+                                                <span>Rajahmundry</span>
+                                             </div>
+                                          </div>
+                                       </a>
+                                       <a href="#" class="states-vip-blog clearfix">
+                                          <div class="vip-img">
+                                             <img src="images/kambala-jogulu.png" alt="">
+                                          </div>
+                                          <div class="state-vip-cont clearfix">
+                                             <p><strong>Kambala Jogulu</strong> | YSRCP</p>
+                                             <div class="vip-leading">
+                                                <p>Leading <i class="fa fa-thumbs-up"></i></p>
+                                                <span>Rajam (SC)</span>
+                                             </div>
+                                          </div>
+                                       </a>
+                                       <a href="#" class="states-vip-blog clearfix">
+                                          <div class="vip-img">
+                                             <img src="images/kimidi-mrunalini.png" alt="">
+                                          </div>
+                                          <div class="state-vip-cont clearfix">
+                                             <p><strong>Kimidi Mrunalini</strong> | TDP</p>
+                                             <div class="vip-leading vip-trailing">
+                                                <p>Leading <i class="fa fa-thumbs-down"></i></p>
+                                                <span>Cheepurupalli</span>
+                                             </div>
+                                          </div>
+                                       </a> -->
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- <div class="state-tg hide">
+                              <div class="state-wise-map-blg no-pad">
+                                 <div class="target-ap">
+                                    <h4>Telangana <span>( 119 / 101 )</span></h4>
+                                 </div>
+                                 <div class="scroll-blog state-scroll">
+                                    <table class="table table-striped table-bordered table-hover table-responsive" id="state-tg">
+                                       <thead>
+                                          <tr>
+                                             <th>Party</th>
+                                             <th>Lead</th>
+                                             <th>Won</th>
+                                             <th>Total</th>
+                                             <th>Gain +</th>
+                                             <th>Loss -</th>
+                                          </tr>
+                                       </thead>
+                                       <tbody>
+                                          <tr>
+                                             <td>TRS</td>
+                                             <td>30</td>
+                                             <td>21</td>
+                                             <td>51</td>
+                                             <td>+30</td>
+                                             <td>-21</td>
+                                          </tr>
+                                          <tr>
+                                             <td>Cong</td>
+                                             <td>30</td>
+                                             <td>21</td>
+                                             <td>51</td>
+                                             <td>+30</td>
+                                             <td>-21</td>
+                                          </tr>
+                                          <tr>
+                                             <td>BJP</td>
+                                             <td>30</td>
+                                             <td>21</td>
+                                             <td>51</td>
+                                             <td>+30</td>
+                                             <td>-21</td>
+                                          </tr>
+                                          <tr>
+                                             <td>TDP</td>
+                                             <td>30</td>
+                                             <td>21</td>
+                                             <td>51</td>
+                                             <td>+30</td>
+                                             <td>-21</td>
+                                          </tr>
+                                          <tr>
+                                             <td>CPI</td>
+                                             <td>30</td>
+                                             <td>21</td>
+                                             <td>51</td>
+                                             <td>+30</td>
+                                             <td>-21</td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </div>
+                                 <div class="state-maps">
+                                    <img src="images/telangana-map.jpg" alt="">
+                                 </div>
+                              </div>
+                              <div class="state-wise-vip-blg no-pad">
+                                 <div class="state-vips">
+                                    <h4>VIP Candidates</h4>
+                                    <div class="scroll-blog vip-scroll">
+                                       <a href="#" class="states-vip-blog clearfix">
+                                          <div class="vip-img">
+                                             <img src="images/harish-rao.png" alt="">
+                                          </div>
+                                          <div class="state-vip-cont clearfix">
+                                             <p><strong>T. Harish Rao</strong> | TRS</p>
+                                             <div class="vip-leading">
+                                                <p>Leading <i class="fa fa-thumbs-up"></i></p>
+                                                <span>Siddipet</span>
+                                             </div>
+                                          </div>
+                                       </a>
+                                       <a href="#" class="states-vip-blog clearfix">
+                                          <div class="vip-img">
+                                             <img src="images/ahmed-balala.png" alt="">
+                                          </div>
+                                          <div class="state-vip-cont clearfix">
+                                             <p><strong>Ahmed Balala</strong> | AIMIM</p>
+                                             <div class="vip-leading vip-trailing">
+                                                <p>Leading <i class="fa fa-thumbs-down"></i></p>
+                                                <span>Malakpet</span>
+                                             </div>
+                                          </div>
+                                       </a>
+                                       <a href="#" class="states-vip-blog clearfix">
+                                          <div class="vip-img">
+                                             <img src="images/raja-singh.png" alt="">
+                                          </div>
+                                          <div class="state-vip-cont clearfix">
+                                             <p><strong>T. Raja Singh</strong> | BJP</p>
+                                             <div class="vip-leading">
+                                                <p>Leading <i class="fa fa-thumbs-up"></i></p>
+                                                <span>Goshamahal</span>
+                                             </div>
+                                          </div>
+                                       </a>
+                                       <a href="#" class="states-vip-blog clearfix">
+                                          <div class="vip-img">
+                                             <img src="images/padma-rao.png" alt="">
+                                          </div>
+                                          <div class="state-vip-cont clearfix">
+                                             <p><strong>T. Padma Rao Goud</strong> | TRS</p>
+                                             <div class="vip-leading vip-trailing">
+                                                <p>Leading <i class="fa fa-thumbs-down"></i></p>
+                                                <span>Secunderabad</span>
+                                             </div>
+                                          </div>
+                                       </a>
+                                       <a href="#" class="states-vip-blog clearfix">
+                                          <div class="vip-img">
+                                             <img src="images/rohith-reddy.png" alt="">
+                                          </div>
+                                          <div class="state-vip-cont clearfix">
+                                             <p><strong>Rohith Reddy</strong> | Cong</p>
+                                             <div class="vip-leading">
+                                                <p>Leading <i class="fa fa-thumbs-up"></i></p>
+                                                <span>Tandur</span>
+                                             </div>
+                                          </div>
+                                       </a>
+                                       <a href="#" class="states-vip-blog clearfix">
+                                          <div class="vip-img">
+                                             <img src="images/muta-gopal.png" alt="">
+                                          </div>
+                                          <div class="state-vip-cont clearfix">
+                                             <p><strong>Muta Gopal</strong> | TRS</p>
+                                             <div class="vip-leading">
+                                                <p>Leading <i class="fa fa-thumbs-up"></i></p>
+                                                <span>Musheerabad</span>
+                                             </div>
+                                          </div>
+                                       </a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="state-be hide">
+                              <div class="state-wise-map-blg no-pad">
+                                 <div class="target-ap">
+                                    <h4>Bengal <span>( 15 / 25 )</span></h4>
+                                 </div>
+                                 <div class="scroll-blog state-scroll">
+                                    <table class="table table-striped table-bordered table-hover table-responsive" id="state-tg">
+                                       <thead>
+                                          <tr>
+                                             <th>Party</th>
+                                             <th>Lead</th>
+                                             <th>Won</th>
+                                             <th>Total</th>
+                                             <th>Gain +</th>
+                                             <th>Loss -</th>
+                                          </tr>
+                                       </thead>
+                                       <tbody>
+                                          <tr>
+                                             <td>TDP</td>
+                                             <td>30</td>
+                                             <td>21</td>
+                                             <td>51</td>
+                                             <td>+30</td>
+                                             <td>-21</td>
+                                          </tr>
+                                          <tr>
+                                             <td>Cong</td>
+                                             <td>30</td>
+                                             <td>21</td>
+                                             <td>51</td>
+                                             <td>+30</td>
+                                             <td>-21</td>
+                                          </tr>
+                                          <tr>
+                                             <td>YSRCP</td>
+                                             <td>30</td>
+                                             <td>21</td>
+                                             <td>51</td>
+                                             <td>+30</td>
+                                             <td>-21</td>
+                                          </tr>
+                                          <tr>
+                                             <td>BSP</td>
+                                             <td>30</td>
+                                             <td>21</td>
+                                             <td>51</td>
+                                             <td>+30</td>
+                                             <td>-21</td>
+                                          </tr>
+                                          <tr>
+                                             <td>CPI</td>
+                                             <td>30</td>
+                                             <td>21</td>
+                                             <td>51</td>
+                                             <td>+30</td>
+                                             <td>-21</td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </div>
+                                 <div class="state-maps">
+                                    <img src="images/ap-map.jpg" alt="">
+                                 </div>
+                              </div>
+                              <div class="state-wise-vip-blg no-pad">
+                                 <div class="state-vips">
+                                    <h4>VIP Candidates</h4>
+                                    <div class="scroll-blog vip-scroll">
+                                       <a href="#" class="states-vip-blog clearfix">
+                                          <div class="vip-img">
+                                             <img src="images/ashok.png" alt="">
+                                          </div>
+                                          <div class="state-vip-cont clearfix">
+                                             <p><strong>Ashok Bendalam</strong> | TDP</p>
+                                             <div class="vip-leading">
+                                                <p>Leading <i class="fa fa-thumbs-up"></i></p>
+                                                <span>Ichchapuram</span>
+                                             </div>
+                                          </div>
+                                       </a>
+                                       <a href="#" class="states-vip-blog clearfix">
+                                          <div class="vip-img">
+                                             <img src="images/venkataramana.png" alt="">
+                                          </div>
+                                          <div class="state-vip-cont clearfix">
+                                             <p><strong>K.Venkata Ramana</strong> | YSRCP</p>
+                                             <div class="vip-leading vip-trailing">
+                                                <p>Leading <i class="fa fa-thumbs-down"></i></p>
+                                                <span>Pathapatnam</span>
+                                             </div>
+                                          </div>
+                                       </a>
+                                       <a href="#" class="states-vip-blog clearfix">
+                                          <div class="vip-img">
+                                             <img src="images/lakshmi-devi.png" alt="">
+                                          </div>
+                                          <div class="state-vip-cont clearfix">
+                                             <p><strong>Gunda Lakshmi Devi</strong> | TDP</p>
+                                             <div class="vip-leading">
+                                                <p>Leading <i class="fa fa-thumbs-up"></i></p>
+                                                <span>Srikakulam</span>
+                                             </div>
+                                          </div>
+                                       </a>
+                                       <a href="#" class="states-vip-blog clearfix">
+                                          <div class="vip-img">
+                                             <img src="images/akula-satyanarayana.png" alt="">
+                                          </div>
+                                          <div class="state-vip-cont clearfix">
+                                             <p><strong>Akula Satyanarayana</strong> | BJP</p>
+                                             <div class="vip-leading vip-trailing">
+                                                <p>Leading <i class="fa fa-thumbs-down"></i></p>
+                                                <span>Rajahmundry</span>
+                                             </div>
+                                          </div>
+                                       </a>
+                                       <a href="#" class="states-vip-blog clearfix">
+                                          <div class="vip-img">
+                                             <img src="images/kambala-jogulu.png" alt="">
+                                          </div>
+                                          <div class="state-vip-cont clearfix">
+                                             <p><strong>Kambala Jogulu</strong> | YSRCP</p>
+                                             <div class="vip-leading">
+                                                <p>Leading <i class="fa fa-thumbs-up"></i></p>
+                                                <span>Rajam (SC)</span>
+                                             </div>
+                                          </div>
+                                       </a>
+                                       <a href="#" class="states-vip-blog clearfix">
+                                          <div class="vip-img">
+                                             <img src="images/kimidi-mrunalini.png" alt="">
+                                          </div>
+                                          <div class="state-vip-cont clearfix">
+                                             <p><strong>Kimidi Mrunalini</strong> | TDP</p>
+                                             <div class="vip-leading vip-trailing">
+                                                <p>Leading <i class="fa fa-thumbs-down"></i></p>
+                                                <span>Cheepurupalli</span>
+                                             </div>
+                                          </div>
+                                       </a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div> -->
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-5 no-pad">
+                     <div class="state-blg col-blg col-bg col-last-child clearfix">
+                        <div class="main-heading">
+                           <h5>Select Constituency Wise Election Results</h5>
+                        </div>
+                        <div class="col-md-5 col-sm-5 no-pad state-dropdown-list">
+                           <select class="div-toggle constit-drop" id="constituencyWise" onchange="onChangeConstWise(this.value)">
+                              <!-- <option data-show=".ap-constituency">Andhra Pradesh</option>
+                              <option data-show=".tg-constituency">Telangana</option> -->
+                           </select>
+                        </div>
+                        <div class="col-md-6 col-sm-6 no-pad search-box">
+                              <input type="text" class="form-control" placeholder="Search.." id="tdSearch" name="search">
+                        </div>
+                        <div class="col-md-12 col-sm-12 no-pad">
+                           <div class="scroll-blog constituency-scroll">
+                              <div class="state-constituency">
+                                 <div class="ap-constituency">
+                                    <table id="AP_Constituency" class="table table-bordered table-hover table-responsive">
+                                       <thead>
+                                          <tr>
+                                             <th>Constituency</th>
+                                             <th>Candidate</th>
+                                             <th>Party</th>
+                                             <th>Status</th>
+                                          </tr>
+                                       </thead>
+                                       <tbody id="constituency_tbody">
+                                          <tr>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="content-sec section-pan">
+         <div class="container">
+            <div class="row headingh5">
+               <div class="col-md-12">
+                  <div class="col-md-5 no-pad">
+                     <div class="col-blg col-bg col-last-child-resp">
+                        <div class="main-heading">
+                           <h5>National Personalities</h5>
+                        </div>
+                        <div class="scroll-blog other-scroll" id="nationalPersonalities">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-7 no-pad">
+                     <div class="col-blg col-bg col-last-child clearfix">
+                        <div class="main-heading">
+                           <h5>Party Wise Results</h5>
+                        </div>
+                        <div class="scroll-blog other-scroll">
+                           <table class="table table-bordered table-hover table" id="partyWiseResults">
+                              <thead>
+                                 <tr>
+                                    <th>Party</th>
+                                    <th>Seats Contested</th>
+                                    <th>Lead</th>
+                                    <th>Won</th>
+                                    <th>Total</th>
+                                    <th>Gain +</th>
+                                    <th>Loss -</th>
+                                 </tr>
+                              </thead>
+                              <tbody>
+                              </tbody>
+                           </table>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!--add-blog-->
+      <section class="add-blog">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="add-space"> <a href="#"><img src="images/ads/add-space-1.jpg" alt="" class="img-responsive"></a> </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="content-sec section-pan">
+         <div class="container">
+            <div class="row">
+               <div class="heading">
+                  <div class="col-md-12 col-sm-12 col-xs-12">
+                     <!--          <h3>Tally</h3>-->
+                  </div>
+               </div>
+            </div>
+            <div class="row headingh5">
+               <div class="col-md-12">
+                  <!--Col-->
+                  <div class="col-md-6 col-sm-6 no-pad">
+                     <div class="ap_odisha-blg col-blg col-bg">
+                        <div class="main-heading">
+                           <h5>Odisha ( 119 / 101 )</h5>
+                        </div>
+                        <div class="scroll-blog">
+                           <table class="table table-bordered table-hover table">
+                              <thead>
+                                 <tr>
+                                    <th>Party</th>
+                                    <th>Lead</th>
+                                    <th>Won</th>
+                                    <th>Total</th>
+                                 </tr>
+                              </thead>
+                              <tbody>
+                                 <tr>
+                                    <td>BJD</td>
+                                    <td>20</td>
+                                    <td>15</td>
+                                    <td>35</td>
+                                 </tr>
+                                 <tr>
+                                    <td>BJP</td>
+                                    <td>15</td>
+                                    <td>10</td>
+                                    <td>25</td>
+                                 </tr>
+                                 <tr>
+                                    <td>Cong</td>
+                                    <td>13</td>
+                                    <td>7</td>
+                                    <td>20</td>
+                                 </tr>
+                                 <tr>
+                                    <td>CPI</td>
+                                    <td>12</td>
+                                    <td>6</td>
+                                    <td>18</td>
+                                 </tr>
+                                 <tr>
+                                    <td>Others</td>
+                                    <td>12</td>
+                                    <td>6</td>
+                                    <td>18</td>
+                                 </tr>
+                                 <tr class="total-tr">
+                                    <td>Total</td>
+                                    <td>119</td>
+                                    <td>63</td>
+                                    <td>119 / 101</td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                     </div>
+                  </div>
+                  <!--Col-->
+                  <div class="col-md-6 col-sm-6 no-pad">
+                     <div class="ap_odisha-blg col-blg col-bg col-last-child">
+                        <div class="main-heading">
+                           <h5>Andhra Pradesh ( 15 / 545 )</h5>
+                        </div>
+                        <div class="scroll-blog">
+                           <table class="table table-bordered table-hover table">
+                              <thead>
+                                 <tr>
+                                    <th>Party</th>
+                                    <th>Lead</th>
+                                    <th>Won</th>
+                                    <th>Total</th>
+                                 </tr>
+                              </thead>
+                              <tbody>
+                                 <tr>
+                                    <td>TDP</td>
+                                    <td>20</td>
+                                    <td>15</td>
+                                    <td>35</td>
+                                 </tr>
+                                 <tr>
+                                    <td>YSRCP</td>
+                                    <td>15</td>
+                                    <td>10</td>
+                                    <td>25</td>
+                                 </tr>
+                                 <tr>
+                                    <td>Cong</td>
+                                    <td>13</td>
+                                    <td>7</td>
+                                    <td>20</td>
+                                 </tr>
+                                 <tr>
+                                    <td>BJP</td>
+                                    <td>12</td>
+                                    <td>6</td>
+                                    <td>18</td>
+                                 </tr>
+                                 <tr>
+                                    <td>Others</td>
+                                    <td>10</td>
+                                    <td>5</td>
+                                    <td>15</td>
+                                 </tr>
+                                 <tr class="total-tr">
+                                    <td>Total</td>
+                                    <td>119</td>
+                                    <td>63</td>
+                                    <td>15 / 25</td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!--colblog-->
+            </div>
+         </div>
+      </section>
+      <!--Footer-->
+      <section class="footer">
+         <div class="container">
+            <div class="row footer-row">
+               <div class="col-md-12">
+                  <div class="col-md-4 col-sm-4 col-xs no-pad">
+                     <div class="col-blg col-bg col-footer clearfix">
+                        <div class="col-blg col-bg col-last-child info-graph-bot">
+                           <div class="main-heading">
+                              <h5>Infographic</h5>
+                           </div>
+                           <div id="tally_lok_sabha" style="width: 100%; height: 450px; position: absolute; top: 20px; left: 0"></div>
+                           <div class="center-line-1"></div>
+                           <div class="totel-target-info">
+                              <span>Total</span>
+                              <h4><span id="sumOfVal"></span> / 545</h4>
+                           </div>
+                        </div>
+                        <div class="side-ad l-side-ad ad-responsive clearfix">
+                           <img src="images/ads/standard-side-ad-2.jpg" alt="" class="img-responsive">
+                        </div>
+                        <div class="footer-logo">
+                           <img src="images/logo.png" alt="" class="img-responsive">
+                           <div class="footer-social">
+                              <p>Follow Us On</p>
+                              <ul>
+                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                 <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                 <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                 <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-8 col-sm-8 col-xs no-pad">
+                     <div class="col-blg col-bg col-last-child col-footer clearfix">
+                        <div class="footer-blg" id="top_stories">
+                           <button class="btn trnd-btn">Top News</button>
+                           <div class="tren-blgs clearfix" id="mList">
+                              <div class="col-md-4 col-sm-4 col-xs-4">
+                                 <div class="video-slide">
+                                    <a href="https://www.youtube.com/watch?v=Q2N-hL90cWw">
+                                       <img src="images/video-1.jpg" alt="">
+                                       <h3>I Am At Congress Mercy: HD Kumaraswamy</h3>
+                                    </a>
+                                 </div>
+                              </div>
+                              <div class="col-md-4 col-sm-4 col-xs-4">
+                                 <div class="video-slide">
+                                    <a href="https://www.youtube.com/watch?v=Q2N-hL90cWw">
+                                       <img src="images/video-2.jpg" alt="">
+                                       <h3>I Am At Congress Mercy: HD Kumaraswamy</h3>
+                                    </a>
+                                 </div>
+                              </div>
+                              <div class="col-md-4 col-sm-4 col-xs-4">
+                                 <div class="video-slide">
+                                    <a href="https://www.youtube.com/watch?v=Q2N-hL90cWw">
+                                       <img src="images/video-3.jpg" alt="">
+                                       <h3>I Am At Congress Mercy: HD Kumaraswamy</h3>
+                                    </a>
+                                 </div>
+                              </div>
+                              <div class="col-md-4 col-sm-4 col-xs-4">
+                                 <div class="video-slide">
+                                    <a href="https://www.youtube.com/watch?v=Q2N-hL90cWw">
+                                       <img src="images/video-4.jpg" alt="">
+                                       <h3>I Am At Congress Mercy: HD Kumaraswamy</h3>
+                                    </a>
+                                 </div>
+                              </div>
+                              <div class="col-md-4 col-sm-4 col-xs-4">
+                                 <div class="video-slide">
+                                    <a href="#">
+                                       <img src="images/video-1.jpg" alt="">
+                                       <h3>I Am At Congress Mercy: HD Kumaraswamy</h3>
+                                    </a>
+                                 </div>
+                              </div>
+                              <div class="col-md-4 col-sm-4 col-xs-4">
+                                 <div class="video-slide">
+                                    <a href="https://www.youtube.com/watch?v=Q2N-hL90cWw">
+                                       <img src="images/video-5.jpg" alt="">
+                                       <h3>I Am At Congress Mercy: HD Kumaraswamy</h3>
+                                    </a>
+                                 </div>
+                              </div>
+                              <div class="col-md-4 col-sm-4 col-xs-4">
+                                 <div class="video-slide">
+                                    <a href="https://www.youtube.com/watch?v=Q2N-hL90cWw">
+                                       <img src="images/video-6.jpg" alt="">
+                                       <h3>I Am At Congress Mercy: HD Kumaraswamy</h3>
+                                    </a>
+                                 </div>
+                              </div>
+                              <div class="col-md-4 col-sm-4 col-xs-4">
+                                 <div class="video-slide">
+                                    <a href="https://www.youtube.com/watch?v=Q2N-hL90cWw">
+                                       <img src="images/video-1.jpg" alt="">
+                                       <h3>I Am At Congress Mercy: HD Kumaraswamy</h3>
+                                    </a>
+                                 </div>
+                              </div>
+                              <div class="col-md-4 col-sm-4 col-xs-4">
+                                 <div class="video-slide">
+                                    <a href="https://www.youtube.com/watch?v=Q2N-hL90cWw">
+                                       <img src="images/video-2.jpg" alt="">
+                                       <h3>I Am At Congress Mercy: HD Kumaraswamy</h3>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div id="mPlayer">
+                              <div> </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="copy-right-pan">
+         <p class="copy-rights">© COPYRIGHT <a href="#" target="_blank">ETV BHARAT</a> 2019. ALL RIGHTS RESERVED | Powered By <a href="http://margadarsicomputers.com/" target="_blank">Margadarsi Computers</a> </p>
+      </section>
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="js/jquery.v3.3.1.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/Highcharts.js"></script>
+      <script type="text/javascript" src="js/youtube-lightbox.js"></script>
+      <!-- <script type="text/javascript" src="js/flowplayer-1.js"></script>
+      <script type="text/javascript" src="js/flowplayer-2.js"></script> -->
+      <script src="js/jquery.dataTables.min.js"></script>
+      <script src="js/dataTables.bootstrap.min.js"></script>
+      <script src="js/national-highcharts.js"></script>
+      <script src="js/plugins.js"></script>
+      <script src="customJS/lokSabhaEresult.js"></script>
+   </body>
+</html>

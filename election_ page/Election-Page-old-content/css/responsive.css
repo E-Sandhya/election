@@ -1,0 +1,117 @@
+@media only screen and (min-width : 1824px) {
+	#AP_Constituency {
+    font-size: inherit;
+}
+#TG_Constituency {
+	font-size: inherit;
+}	
+}
+@media only screen and (max-width: 1199px){
+	.scroll-blog {
+	overflow-x: auto;
+	}
+}
+@media only screen and (max-width : 1023px) {
+	.side-quik-links {
+		display: none;
+	}
+	.tally-scroll {
+    height: 202px;
+}
+}
+
+@media only screen and (max-width : 991px) {
+	.col-last-child-resp {
+		margin-right: 0px;
+	}
+.totel-target-info {
+	width: 50%;
+	}
+	#tally_lok_sabha {
+		top: 25px!important;
+	}
+	.center-line-1 {
+	height: 140px;
+	top: 34%;
+}
+.constituency-scroll {
+	height: 300px;
+}
+.state-blg {
+	min-height: auto !important;
+}
+
+.tally-scroll {
+    height: 202px;
+}	
+	
+}
+
+@media only screen and (max-width: 767px){
+	.totel-target-info {
+	width: 50%;
+	}
+	#tally_lok_sabha {
+		top: 30%!important;
+	}
+	.center-line-1 {
+	height: 200px;
+	top: 36%;
+}
+	
+.footer-row > .col-xs-4{
+		width: 100%;
+	}
+	.footer-logo {
+	display: flex;
+	margin-bottom: 10px;
+	}
+	.footer-logo img {
+		margin-right: 10px;
+	}
+	.ad-responsive img {
+		float: none;
+	    margin: auto;
+	}
+	.col-footer {
+	min-height: auto;
+	}	
+	
+}
+
+@media only screen and (max-width : 660px) {
+	.select-btn {
+	width: 60%;
+}
+
+.info-graph-bot {
+    min-height: 351px;
+}	
+	
+}
+@media only screen and (max-width: 539px){
+	.state-dropdown-list {
+	position: relative;
+	}
+}
+@media only screen and (max-width: 595px){
+	.state-wise-map-blg {
+	max-width: 100%;
+	width: 100%;
+	margin-right: 0px;
+	margin-bottom: 10px;
+}
+	.state-wise-vip-blg {
+	max-width: 100%;
+	width: 100%;
+}
+}
+@media only screen and (max-width: 360px){
+	#tally_lok_sabha {
+    top: 10% !important;
+}
+.center-line-1 {
+	height: 140px;
+	top: 33%;
+}	
+}
